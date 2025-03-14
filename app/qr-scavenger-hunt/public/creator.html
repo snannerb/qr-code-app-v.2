@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Creator Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Game Creator Dashboard</h1>
+    <form id="location-form">
+      <label for="latitude">Latitude:</label>
+      <input type="text" id="latitude" required>
+      <label for="longitude">Longitude:</label>
+      <input type="text" id="longitude" required>
+      <label for="clue">Clue:</label>
+      <textarea id="clue" required></textarea>
+      <button type="submit">Add QR Code Location</button>
+    </form>
+    <h2>QR Code for Joining the Game</h2>
+    <div id="join-game-qr"></div>
+    <h2>Clues</h2>
+    <div id="clues-list"></div>
+  </div>
+  <script src="js/shared.js"></script>
+  <script src="js/creator.js"></script>
+</body>
+</html>
